@@ -1,0 +1,90 @@
+#site-header {
+  background-color: #0d1d41;
+  background-image: url("../promo_header.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 250px;
+  image-rendering: pixelated;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  display: flex;
+  align-items: center;
+}
+
+#site-disclaimer {
+  background-color: #0c0c0c;
+  padding: 1rem;
+}
+
+#site-bind-row .card {
+  transition: all .2s ease-in-out;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+#site-bind-row .card:hover {
+  transform: scale(1.05)
+}
+
+
+.site-bind-card-avatar-image {
+  background: url('../floor_bg.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  border-radius: .25rem;
+}
+
+#site-bind-card-avatar-image {
+  image-rendering: pixelated;
+  width: 64px;
+  height: 110px;
+}
+
+.site-bind-card-unit-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0c0c0c;
+  padding: 0.3rem;
+  font-size: 0.8em;
+  -webkit-border-top-right-radius: .25rem;
+  -webkit-border-bottom-left-radius: .25rem;
+  -moz-border-radius-topright: .25rem;
+  -moz-border-radius-bottomleft: .25rem;
+  border-top-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  image-rendering: pixelated
+}
+
+.site-bind-card-habbo-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0c0c0c;
+  padding: 0.3rem;
+  -webkit-border-bottom-right-radius: .25rem;
+  -webkit-border-bottom-left-radius: .25rem;
+  -moz-border-radius-bottomright: .25rem;
+  -moz-border-radius-bottomleft: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  text-align: center;
+}
+
+#site-bind-card-unconfirmed {
+  background-color: rgba(255, 0, 0, 0.3);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
