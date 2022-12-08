@@ -19,6 +19,7 @@
 #site-bind-row .card {
   transition: all .2s ease-in-out;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  cursor: pointer;
 }
 
 #site-bind-row .card:hover {
@@ -37,7 +38,7 @@
   border-radius: .25rem;
 }
 
-#site-bind-card-avatar-image {
+.site-bind-card-avatar-image > img {
   image-rendering: pixelated;
   width: 64px;
   height: 110px;
