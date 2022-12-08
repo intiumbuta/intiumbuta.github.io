@@ -13,7 +13,7 @@ function get_date(timestamp){
 var binds = JSON.parse(data);
 
 document.getElementById("site-confirmed-binds-header").innerHTML = binds.Binds.length + " binds"
-document.getElementById("site-last-updated").innerHTML =  "Last updated " + binds.LastUpdated
+document.getElementById("site-last-updated").innerHTML =  "Last updated " + get_date(binds.LastUpdated)
 
 const bindCard = document.getElementById("site-bind-card");
 
@@ -47,8 +47,7 @@ binds.Binds.forEach(function(b){
 
 
 const profileModal = document.getElementById('site-profile-modal')
-profileModal.addEventListener('show.bs.modal', event => {
-  // do something...
+  profileModal.addEventListener('show.bs.modal', event => {
   profileModal.querySelector("#site-profile-modal-title-habbo-name").innerHTML = event.relatedTarget.getAttribute("data-habboname")
   profileModal.querySelector("#site-profile-modal-uuid").innerHTML = event.relatedTarget.getAttribute("data-uuid")
   profileModal.querySelector("#site-profile-modal-level").innerHTML = event.relatedTarget.getAttribute("data-level")
