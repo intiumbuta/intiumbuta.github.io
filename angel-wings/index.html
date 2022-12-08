@@ -42,7 +42,7 @@
         <div class="card">
           <div id="site-bind-card-unconfirmed" class="d-none">Unconfirmed</div>
           <div class="site-bind-card-avatar-image">
-            <img src="https://www.habbo.com/habbo-imaging/avatarimage?figure=hr-100-undefined-.hd-180-7-61.ch-210-66-.lg-270-82-.sh-290-80-&direction=2&head_direction=2&action=gesture=nrm&&size=b" loading="lazy" id="site-bind-card-avatar-image" />
+            <img src="https://imager.habboon.pw/?figure=hr-100-undefined-.hd-180-7-61.ch-210-66-.lg-270-82-.sh-290-80-&direction=2&head_direction=2&action=gesture=nrm&&size=b" loading="lazy" id="site-bind-card-avatar-image" />
           </div>
 
           <div class="site-bind-card-habbo-name">
@@ -76,7 +76,7 @@
       clone = bindCard.cloneNode(true);
 
       clone.querySelector('#site-bind-card-habbo-name').innerHTML = b.HabboName;
-      clone.querySelector('#site-bind-card-avatar-image').src = "https://www.habbo.com/habbo-imaging/avatarimage?figure=" + b.OutfitFigureString + "&direction=2&head_direction=2&action=gesture=nrm&&size=b";
+      clone.querySelector('#site-bind-card-avatar-image').src = "https://imager.habboon.pw/?figure=" + b.OutfitFigureString + "&direction=2&head_direction=2&action=gesture=nrm&&size=b";
       clone.classList.remove("d-none");
 
       clone.querySelector("#site-bind-card-habbo-name").setAttribute("href", "https://www.habbowidgets.com/habinfo/" + b.HabboID);
