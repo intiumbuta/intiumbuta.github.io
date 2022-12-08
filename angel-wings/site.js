@@ -39,7 +39,7 @@ binds.Binds.forEach(function(b){
   }
 
   if(b.Unconfirmed){
-    clone.querySelector('#site-bind-card-unconfirmed').classList.remove("d-none");
+    clone.querySelector('#site-bind-card-community-confirmed').classList.remove("d-none");
   }
 
   document.getElementById("site-bind-row").appendChild(clone);
