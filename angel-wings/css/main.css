@@ -47,7 +47,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #0c0c0c;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0.3rem;
   font-size: 0.8em;
   -webkit-border-top-right-radius: .25rem;
@@ -64,7 +64,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #0c0c0c;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0.3rem;
   -webkit-border-bottom-right-radius: .25rem;
   -webkit-border-bottom-left-radius: .25rem;
