@@ -1,6 +1,6 @@
 #site-header {
   background-color: #0d1d41;
-  background-image: url("../promo_header.png");
+  background-image: url("../images/promo_header.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 250px;
@@ -28,7 +28,7 @@
 
 
 .site-bind-card-avatar-image {
-  background: url('../floor_bg.png');
+  background: url('../images/floor_bg.png');
   display: flex;
   justify-content: center;
   align-items: center;
