@@ -33,6 +33,10 @@ binds.Binds.forEach(function(b){
   profileLink.setAttribute("data-friends", b.HabboFriendsCount)
   profileLink.setAttribute("data-scanned", b.HabboLastScanned)
 
+  if(typeof b.PreviousNames !== 'undefined'){
+    profileLink.setAttribute("data-names", b.PreviousNames)
+  }
+
   if(b.BindUnitNumber > 0){
     clone.querySelector("#site-bind-card-unit-number").innerHTML = b.BindUnitNumber;
     clone.querySelector(".site-bind-card-unit-number").classList.remove("d-none");
@@ -53,6 +57,13 @@ const profileModal = document.getElementById('site-profile-modal')
   profileModal.querySelector("#site-profile-modal-level").innerHTML = event.relatedTarget.getAttribute("data-level")
   profileModal.querySelector("#site-profile-modal-friends").innerHTML = event.relatedTarget.getAttribute("data-friends")
   profileModal.querySelector("#site-profile-modal-last-scan").innerHTML = get_date(event.relatedTarget.getAttribute("data-scanned"))
+
+  if(event.relatedTarget.getAttribute("data-names")){
+    profileModal.querySelector("#site-profile-modal-previous-names").innerHTML = event.relatedTarget.getAttribute("data-names")
+  } else {
+    profileModal.querySelector("#site-profile-modal-previous-names").innerHTML = "N/A";
+  }
+
   profileModal.querySelector("#site-profile-modal-avatarimage").setAttribute("src", get_avatarimage(event.relatedTarget.getAttribute("data-habboname"),true))
   profileModal.querySelector("#site-profile-modal-hw-link").href = "https://www.habbowidgets.com/habinfo/" + event.relatedTarget.getAttribute("data-uuid")
 })
